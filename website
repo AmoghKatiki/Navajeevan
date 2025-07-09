@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navajeevan - Bringing New Life</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Light grey background */
+            color: #343a40; /* Dark grey text */
+        }
+        .nav-link {
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #ffffff; /* White text on hover */
+            background-color: #007bff; /* Primary blue on hover */
+            border-radius: 0.5rem; /* Rounded corners on hover */
+        }
+        .btn-primary {
+            background-color: #007bff; /* Primary blue */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .section-padding {
+            padding: 4rem 1rem; /* Generous padding for sections */
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo/Site Title -->
+            <a href="#" class="text-2xl md:text-3xl font-bold text-blue-700 rounded-lg p-2 transition duration-300 ease-in-out hover:bg-blue-100">
+                Navajeevan
+            </a>
+
+            <!-- Mobile Menu Button (Hamburger) -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4"></path>
+                </svg>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav id="main-nav" class="hidden md:flex space-x-6">
+                <a href="#about-us" class="nav-link text-lg font-medium text-gray-700 px-3 py-2 rounded-lg">About Us</a>
+                <a href="#our-work" class="nav-link text-lg font-medium text-gray-700 px-3 py-2 rounded-lg">Our Work</a>
+                <a href="#contact" class="nav-link text-lg font-medium text-gray-700 px-3 py-2 rounded-lg">Contact</a>
+                <a href="#donate" class="btn-primary text-lg font-semibold px-5 py-2 rounded-lg shadow-md hover:shadow-lg">Donate</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Navigation Menu (hidden by default) -->
+        <nav id="mobile-menu" class="md:hidden mt-4 bg-white rounded-lg shadow-lg hidden">
+            <a href="#about-us" class="block text-gray-700 px-4 py-3 text-lg font-medium hover:bg-blue-100 rounded-lg">About Us</a>
+            <a href="#our-work" class="block text-gray-700 px-4 py-3 text-lg font-medium hover:bg-blue-100 rounded-lg">Our Work</a>
+            <a href="#contact" class="block text-gray-700 px-4 py-3 text-lg font-medium hover:bg-blue-100 rounded-lg">Contact</a>
+            <a href="#donate" class="block btn-primary text-lg font-semibold px-4 py-3 rounded-lg text-center mt-2">Donate</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white flex items-center justify-center text-center section-padding pt-32 pb-24 md:pt-48 md:pb-32 min-h-screen">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                <!-- PLACE YOUR HERO HEADLINE HERE -->
+                Bringing New Life, Creating Brighter Futures
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in-up delay-200">
+                <!-- PLACE YOUR HERO SUBTEXT HERE -->
+                Navajeevan is dedicated to empowering communities through sustainable initiatives in education, health, and environmental conservation.
+            </p>
+            <a href="#our-work" class="btn-primary text-xl font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out animate-fade-in-up delay-400">
+                Learn More About Our Impact
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="bg-white section-padding">
+        <div class="container mx-auto px-4 md:flex md:items-center md:space-x-12">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">About Navajeevan</h2>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    <!-- PLACE YOUR "ABOUT US" INTRODUCTION HERE -->
+                    Navajeevan, meaning "New Life," was founded with a vision to foster holistic development in underserved regions. We believe in creating self-sustaining communities where every individual has the opportunity to thrive.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    <!-- PLACE MORE DETAILED "ABOUT US" TEXT HERE -->
+                    Our journey began in [Year] with a small team passionate about social change. Since then, we have grown, reaching thousands of lives through our dedicated programs. We focus on long-term solutions rather than temporary fixes, working hand-in-hand with local populations to identify their most pressing needs and co-create effective strategies.
+                </p>
+                <ul class="list-disc list-inside text-gray-700 text-lg mt-6 space-y-2">
+                    <li><!-- PLACE YOUR MISSION POINT 1 HERE --> Our mission is to empower individuals and communities.</li>
+                    <li><!-- PLACE YOUR MISSION POINT 2 HERE --> We strive for sustainable development.</li>
+                    <li><!-- PLACE YOUR MISSION POINT 3 HERE --> We champion transparency and accountability.</li>
+                </ul>
+            </div>
+            <div class="md:w-1/2">
+                <!-- PLACE AN IMAGE OR ILLUSTRATION RELATED TO "ABOUT US" HERE -->
+                <!-- Example: <img src="https://placehold.co/600x400/007bff/ffffff?text=Our+Team" alt="Our Team" class="rounded-lg shadow-lg w-full h-auto"> -->
+                <div class="bg-blue-100 rounded-lg p-6 shadow-lg">
+                    <p class="text-blue-800 text-xl italic text-center">
+                        "Alone, we can do so little; together, we can do so much." - Helen Keller
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section id="our-work" class="bg-blue-50 section-padding">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-12">Our Impact Areas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Work Area 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                    <div class="text-blue-600 mb-4">
+                        <!-- PLACE ICON FOR EDUCATION HERE (e.g., SVG or Font Awesome) -->
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.747 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Education for All</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        <!-- PLACE DESCRIPTION FOR EDUCATION INITIATIVES HERE -->
+                        We build schools, provide learning materials, and offer scholarships to ensure every child has access to quality education, fostering a brighter future.
+                    </p>
+                </div>
+
+                <!-- Work Area 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                    <div class="text-blue-600 mb-4">
+                        <!-- PLACE ICON FOR HEALTH HERE (e.g., SVG or Font Awesome) -->
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.007 12.007 0 002.944 12c0 2.879.655 5.504 1.84 7.907l1.042 2.183a1.002 1.002 0 001.442.272l1.04-1.04a1.002 1.002 0 00.272-1.442l-2.183-1.042c-1.19-2.403-1.845-5.028-1.845-7.907a10.002 10.002 0 0110.002-10.002z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Community Health</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        <!-- PLACE DESCRIPTION FOR HEALTH INITIATIVES HERE -->
+                        We establish health clinics, conduct awareness campaigns, and provide access to clean water and sanitation, improving overall well-being.
+                    </p>
+                </div>
+
+                <!-- Work Area 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                    <div class="text-blue-600 mb-4">
+                        <!-- PLACE ICON FOR ENVIRONMENT HERE (e.g., SVG or Font Awesome) -->
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 12H5.5a2.5 2.5 0 010-5h.5c.5 0 1 .5 1 1v2h2.5m-2.5 5h2.5m-2.5-5a2.5 2.5 0 000 5h.5c.5 0 1-.5 1-1v-2h2.5m-2.5-5h2.5"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Environmental Stewardship</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        <!-- PLACE DESCRIPTION FOR ENVIRONMENTAL INITIATIVES HERE -->
+                        Through reforestation, waste management, and sustainable agriculture, we protect the environment and promote ecological balance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Donate Section -->
+    <section id="donate" class="bg-gradient-to-r from-blue-700 to-blue-900 text-white section-padding text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Make a Difference Today</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                <!-- PLACE YOUR DONATE SECTION TEXT HERE -->
+                Your generous contribution can transform lives. Every donation, big or small, helps us continue our vital work in education, health, and environmental sustainability.
+            </p>
+            <a href="#" class="btn-primary bg-white text-blue-700 text-xl font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
+                Donate Now
+            </a>
+            <!-- You can link this button to your actual donation page/platform -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white section-padding">
+        <div class="container mx-auto px-4 md:flex md:space-x-12">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">Get in Touch</h2>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    <!-- PLACE YOUR CONTACT INTRODUCTION HERE -->
+                    We'd love to hear from you! Whether you have questions about our work, want to volunteer, or simply want to learn more, feel free to reach out.
+                </p>
+                <div class="space-y-4 text-lg text-gray-700">
+                    <p><strong class="text-blue-600">Email:</strong> <!-- PLACE YOUR EMAIL HERE --> info@navajeevan.org</p>
+                    <p><strong class="text-blue-600">Phone:</strong> <!-- PLACE YOUR PHONE NUMBER HERE --> +1 (123) 456-7890</p>
+                    <p><strong class="text-blue-600">Address:</strong> <!-- PLACE YOUR ADDRESS HERE --> 123 Main Street, City, State, ZIP</p>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Follow Us</h3>
+                    <div class="flex space-x-6">
+                        <!-- PLACE YOUR SOCIAL MEDIA LINKS HERE (e.g., Facebook, Twitter, Instagram) -->
+                        <a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300 ease-in-out">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.24.195 2.24.195v2.46h-1.26c-1.247 0-1.625.777-1.625 1.56V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z" clip-rule="evenodd"></path></svg>
+                        </a>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300 ease-in-out">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c1.267 0 2.112-.647 2.112-1.761 0-.962-.75-1.577-2.025-1.577-1.282 0-2.127.647-2.127 1.761 0 .962.75 1.577 2.025 1.577zm-3.535-7.795c.783-.783 1.958-1.246 3.24-1.246 1.282 0 2.457.463 3.24 1.246l.006.006c.783.783 1.246 1.958 1.246 3.24 0 1.282-.463 2.457-1.246 3.24l-.006.006c-.783.783-1.958 1.246-3.24 1.246-1.282 0-2.457-.463-3.24-1.246l-.006-.006c-.783-.783-1.246-1.958-1.246-3.24 0-1.282.463-2.457 1.246-3.24zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-4.71 14.5c-.783-.783-1.246-1.958-1.246-3.24 0-1.282.463-2.457 1.246-3.24l.006-.006c.783-.783 1.958-1.246 3.24-1.246 1.282 0 2.457.463 3.24 1.246l.006.006c.783.783 1.246 1.958 1.246 3.24 0 1.282-.463 2.457-1.246 3.24l-.006.006c-.783.783-1.958 1.246-3.24 1.246-1.282 0-2.457-.463-3.24-1.246z"></path></svg>
+                        </a>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 transition duration-300 ease-in-out">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-3.5 14.5v-9h2.5v9h-2.5zm5.5 0h-2.5v-4.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5v4.5z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <!-- PLACE A CONTACT FORM HERE (optional, requires backend or third-party service) -->
+                <form class="bg-blue-50 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Send Us a Message</h3>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="your@example.com">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full py-3 rounded-lg text-xl font-semibold shadow-md hover:shadow-lg">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-12 text-center">
+        <div class="container mx-auto">
+            <p class="text-lg mb-4">&copy; 2025 Navajeevan. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 text-sm">
+                <a href="#privacy-policy" class="hover:underline">Privacy Policy</a>
+                <a href="#terms-of-service" class="hover:underline">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mainNav = document.getElementById('main-nav');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
