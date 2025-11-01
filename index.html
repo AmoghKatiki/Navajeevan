@@ -7,6 +7,7 @@
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
     body {
@@ -14,12 +15,29 @@
       background-color: #f7f9fb;
     }
 
-    /* Hero background image */
+    /* Hero background image with overlay */
     .hero-bg {
-      background-image: url('./images/hero-background.jpg');
+      position: relative;
+      background-image: url('./images/hero-background.jpeg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+    }
+
+    .hero-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.45); /* Dark overlay */
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
     }
 
     .section-title {
@@ -39,6 +57,7 @@
     }
   </style>
 </head>
+
 <body>
   <!-- Navigation -->
   <header class="bg-white shadow-md sticky top-0 z-10">
@@ -57,7 +76,7 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero-bg py-24 md:py-36 text-white text-center">
-    <div class="bg-black bg-opacity-50 p-8 md:p-10 max-w-3xl mx-auto rounded-xl shadow-2xl">
+    <div class="hero-content bg-transparent p-8 md:p-10 max-w-3xl mx-auto rounded-xl shadow-2xl">
       <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Empowering Girls in Odisha</h1>
       <p class="text-xl md:text-2xl font-light mb-8">
         Navajeevan is dedicated to supporting a girls’ orphanage—building futures through education and care.
@@ -101,7 +120,7 @@
 
       <div class="grid md:grid-cols-2 gap-8">
         <div class="bg-white p-8 rounded-xl shadow-xl flex flex-col md:flex-row items-center space-x-6">
-          <img src="./images/monsoon.jpg" alt="Monsoon Help" class="w-40 h-40 rounded-lg object-cover mb-4 md:mb-0">
+          <img src="./images/monsoon.jpeg" alt="Monsoon Help" class="w-40 h-40 rounded-lg object-cover mb-4 md:mb-0">
           <div>
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Monsoon Protection</h3>
             <p class="text-gray-700 mb-4">Your donation helps buy durable umbrellas and raincoats so the girls can stay safe during the heavy rains.</p>
@@ -110,7 +129,7 @@
         </div>
 
         <div class="bg-white p-8 rounded-xl shadow-xl flex flex-col md:flex-row items-center space-x-6">
-          <img src="./images/books.jpg" alt="Textbooks" class="w-40 h-40 rounded-lg object-cover mb-4 md:mb-0">
+          <img src="./images/books.jpeg" alt="Textbooks" class="w-40 h-40 rounded-lg object-cover mb-4 md:mb-0">
           <div>
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Academic Essentials</h3>
             <p class="text-gray-700 mb-4">We are raising funds for new textbooks and school supplies to prepare for the next academic year.</p>
@@ -129,7 +148,7 @@
       <div class="grid md:grid-cols-2 gap-8">
         <!-- Founder -->
         <div class="bg-gray-800 p-8 rounded-xl shadow-2xl flex flex-col items-center text-center">
-          <img src="./images/amogh.jpg" alt="Amogh Katiki" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-red-500">
+          <img src="./images/amogh.jpeg" alt="Amogh Katiki" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-red-500">
           <h3 class="text-2xl font-bold mb-1 text-white">Amogh Katiki</h3>
           <p class="text-red-400 font-semibold mb-2">Co-founder</p>
           <p class="text-gray-400 text-sm italic">Thomas Jefferson High School for Science and Technology</p>
@@ -137,7 +156,7 @@
 
         <!-- Advisor -->
         <div class="bg-gray-800 p-8 rounded-xl shadow-2xl flex flex-col items-center text-center">
-          <img src="./images/rama-rao.jpg" alt="Rama Rao Katiki" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-blue-500">
+          <img src="./images/rama-rao.jpeg" alt="Rama Rao Katiki" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-blue-500">
           <h3 class="text-2xl font-bold mb-1 text-white">Rama Rao Katiki</h3>
           <p class="text-blue-400 font-semibold mb-2">Co-founder</p>
           <p class="text-gray-400 text-sm italic">District Counselor</p>
