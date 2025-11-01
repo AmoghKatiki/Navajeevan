@@ -1,39 +1,106 @@
-<!-- Contact Section -->
-<section id="contact" class="py-16 md:py-24 bg-gray-900 text-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="section-title text-3xl md:text-4xl font-bold text-center mb-12 text-white after:bg-red-500">
-      Meet Our Founders & Advisors
-    </h2>
-    <p class="text-center text-gray-400 mb-10 max-w-2xl mx-auto">
-      Our work is driven by a passionate team combining youthful drive and lifelong experience.
-    </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seasonal Focus – Fixed Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-    <div class="space-y-10">
-      <!-- Founder -->
-      <div class="bg-gray-800 p-8 rounded-xl shadow-2xl flex flex-col md:flex-row items-center md:items-start md:space-x-8">
-        <img src="founder.jpeg" alt="Founder" class="w-40 h-40 rounded-full object-cover mb-6 md:mb-0 border-4 border-red-500">
-        <div class="text-center md:text-left">
-          <h3 class="text-2xl font-bold mb-1 text-white">Amogh Katiki</h3>
-          <p class="text-red-400 font-semibold mb-2">Co-founder</p>
-          <p class="text-gray-400 text-sm italic mb-4">Thomas Jefferson High School for Science and Technology</p>
-          <p class="text-gray-300">
-            Amogh co-founded Navajeevan with the goal of empowering girls in Odisha through education and sustainable care programs.
-          </p>
-        </div>
-      </div>
+<body class="bg-gray-50 text-gray-800">
 
-      <!-- Co-founder -->
-      <div class="bg-gray-800 p-8 rounded-xl shadow-2xl flex flex-col md:flex-row items-center md:items-start md:space-x-8">
-        <img src="cofounder.jpeg" alt="Co-Founder" class="w-40 h-40 rounded-full object-cover mb-6 md:mb-0 border-4 border-blue-500">
-        <div class="text-center md:text-left">
-          <h3 class="text-2xl font-bold mb-1 text-white">Rama Rao Katiki</h3>
-          <p class="text-blue-400 font-semibold mb-2">Co-Founder</p>
-          <p class="text-gray-400 text-sm italic mb-4">District Counselor</p>
-          <p class="text-gray-300">
-            A lifelong counselor and advisor, Rama Rao provides guidance and leadership to ensure Navajeevan’s mission remains grounded and impactful.
-          </p>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-red-600">CampusCart</h1>
+      <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <li><a href="#" class="hover:text-red-500">Home</a></li>
+        <li><a href="#" class="hover:text-red-500">Shop</a></li>
+        <li><a href="#" class="hover:text-red-500">About</a></li>
+        <li><a href="#" class="hover:text-red-500">Contact</a></li>
+      </ul>
+      <button class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600">Login</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-red-500 to-red-600 text-white py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-4">Everything You Need, All in One Cart</h2>
+      <p class="text-lg mb-8">From rain gear to notebooks — shop the best campus essentials for every season.</p>
+      <button class="bg-white text-red-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100">
+        Shop Now
+      </button>
+    </div>
+  </section>
+
+  <!-- Seasonal Focus Section (Fixed Version) -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Seasonal Focus</h2>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        
+        <!-- Monsoon Protection Card -->
+        <div class="flex items-center bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition-shadow">
+          <!-- Icon -->
+          <div class="flex-shrink-0 bg-blue-100 text-blue-600 p-5 rounded-full mr-6">
+            <!-- Umbrella Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 2C7.03 2 2.73 5.11 1.37 9.61a.75.75 0 0 0 .72.96h19.82a.75.75 0 0 0 .72-.96C21.27 5.11 16.97 2 12 2zM12 12v8a2 2 0 1 1-4 0M16 20a2 2 0 1 1-4 0" />
+            </svg>
+          </div>
+
+          <!-- Text Content -->
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Monsoon Protection</h3>
+            <p class="text-gray-600 mb-4">
+              Stay dry and comfortable with our curated selection of waterproof gear, umbrellas, and rainwear essentials.
+            </p>
+            <a href="/monsoon">
+              <button class="bg-red-500 hover:bg-red-600 text-white text-sm font-medium px-4 py-2 rounded-full">
+                Shop Now
+              </button>
+            </a>
+          </div>
         </div>
+
+        <!-- Academic Essentials Card -->
+        <div class="flex items-center bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition-shadow">
+          <!-- Icon -->
+          <div class="flex-shrink-0 bg-yellow-100 text-yellow-600 p-5 rounded-full mr-6">
+            <!-- Book Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15z" />
+            </svg>
+          </div>
+
+          <!-- Text Content -->
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Academic Essentials</h3>
+            <p class="text-gray-600 mb-4">
+              Gear up for the school season with stationery, backpacks, and study supplies tailored for every student.
+            </p>
+            <a href="/academic">
+              <button class="bg-red-500 hover:bg-red-600 text-white text-sm font-medium px-4 py-2 rounded-full">
+                Shop Now
+              </button>
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-8 mt-16 shadow-inner">
+    <div class="max-w-6xl mx-auto px-6 text-center text-gray-600">
+      <p>© 2025 CampusCart. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
