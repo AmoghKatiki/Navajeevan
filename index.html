@@ -1,174 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navajeevan - Hope for Odisha's Girls</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f7f9fb;
-    }
-    .hero-bg {
-      background-image: url('hero-bg.jpeg');
-      background-size: cover;
-      background-position: center;
-    }
-    .section-title {
-      position: relative;
-      padding-bottom: 0.5rem;
-    }
-    .section-title::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 4px;
-      background-color: #ef4444;
-      border-radius: 9999px;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Navigation -->
-  <header class="bg-white shadow-md sticky top-0 z-10">
-    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
-      <a href="#home" class="text-2xl font-bold text-red-600">Navajeevan</a>
-      <nav class="space-x-4">
-        <a href="#mission" class="text-gray-600 hover:text-red-600 transition">Our Mission</a>
-        <a href="#needs" class="text-gray-600 hover:text-red-600 transition">Seasonal Needs</a>
-        <a href="#contact" class="text-gray-600 hover:text-red-600 transition">Contact/Mentors</a>
-        <button class="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition shadow-lg">
-          Donate Now
-        </button>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero-bg py-24 md:py-36 text-white text-center">
-    <div class="bg-black bg-opacity-50 p-6 md:p-10 max-w-3xl mx-auto rounded-xl shadow-2xl m-4">
-      <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Empowering Girls in Odisha, India</h1>
-      <p class="text-xl md:text-2xl font-light mb-8">
-        Navajeevan is dedicated to raising funds and essential items for a girls' orphanage, building futures through education and care.
-      </p>
-      <a href="#needs" class="bg-red-600 text-white text-lg px-8 py-3 rounded-xl font-bold hover:bg-red-700 transition shadow-xl">
-        See How You Can Help
-      </a>
-    </div>
-  </section>
-
-  <!-- Mission Section -->
-  <section id="mission" class="py-16 md:py-24 max-w-6xl mx-auto px-4">
-    <h2 class="section-title text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-      Our Mission: New Life (Navajeevan)
+<!-- Contact Section -->
+<section id="contact" class="py-16 md:py-24 bg-gray-900 text-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="section-title text-3xl md:text-4xl font-bold text-center mb-12 text-white after:bg-red-500">
+      Meet Our Founders & Advisors
     </h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <!-- Pillar 1 -->
-      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-red-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-        </svg>
-        <h3 class="text-xl font-semibold mb-3 text-gray-900">Education First</h3>
-        <p class="text-gray-600">We ensure every girl has access to quality schooling, providing textbooks, notebooks, and tutoring support to foster a love for learning.</p>
-      </div>
-      <!-- Pillar 2 -->
-      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-red-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V5a2 2 0 012-2h12a2 2 0 012 2v3m-2 4h-4l-1 2H7l-1-2H4a2 2 0 01-2-2V8a2 2 0 012-2h16a2 2 0 012 2v4a2 2 0 01-2 2h-4l-1 2H7l-1-2H4z" />
-        </svg>
-        <h3 class="text-xl font-semibold mb-3 text-gray-900">Year-Round Support</h3>
-        <p class="text-gray-600">From monsoon raincoats to warm winter blankets, we adapt our aid to meet the seasonal and daily needs of the children.</p>
-      </div>
-      <!-- Pillar 3 -->
-      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-red-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-        <h3 class="text-xl font-semibold mb-3 text-gray-900">Long-Term Growth</h3>
-        <p class="text-gray-600">Beyond immediate needs, we fund upgrades and workshops to ensure long-term stability and empowerment.</p>
-      </div>
-    </div>
-  </section>
+    <p class="text-center text-gray-400 mb-10 max-w-2xl mx-auto">
+      Our work is driven by a passionate team combining youthful drive and lifelong experience.
+    </p>
 
-  <!-- Seasonal Focus Section -->
-  <section id="needs" class="bg-red-50 py-16 md:py-24">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="section-title text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-        Our Current Seasonal Focus
-      </h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Item 1 -->
-        <div class="bg-white p-8 rounded-xl shadow-xl flex flex-col md:flex-row items-center space-x-6">
-          <div class="flex-shrink-0">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path d="M22 12a10 10 0 0 0-20 0zM12 12v10M12 12l2-2M12 12l-2-2"/>
-            </svg>
-          </div>
-          <div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-2">Monsoon Protection (Umbrellas & Raincoats)</h3>
-            <p class="text-gray-700 mb-4">The Odisha monsoon is intense. Donations help us buy <strong>umbrellas and raincoats</strong> so girls can attend school safely.</p>
-            <button class="text-red-600 font-semibold hover:text-red-800 transition">Donate Towards Rain Gear →</button>
-          </div>
-        </div>
-        <!-- Item 2 -->
-        <div class="bg-white p-8 rounded-xl shadow-xl flex flex-col md:flex-row items-center space-x-6">
-          <div class="flex-shrink-0">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path d="M4 19.5V15a2.5 2.5 0 0 1 5 0v4.5M12 19.5V12a2.5 2.5 0 0 1 5 0v7.5M4 19.5a2.5 2.5 0 0 0 5 0M9 19.5a2.5 2.5 0 0 0 5 0M14 19.5a2.5 2.5 0 0 0 5 0M4 19.5h16"/>
-            </svg>
-          </div>
-          <div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-2">Academic Essentials (Textbooks & Supplies)</h3>
-            <p class="text-gray-700 mb-4">We’re raising funds for <strong>new textbooks and school supplies</strong> for the next academic year.</p>
-            <button class="text-red-600 font-semibold hover:text-red-800 transition">Sponsor a Textbook →</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 md:py-24 bg-gray-900 text-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="section-title text-3xl md:text-4xl font-bold text-center mb-12 text-white after:bg-red-500">
-        Meet Our Founders & Advisors
-      </h2>
-      <p class="text-center text-gray-400 mb-10 max-w-2xl mx-auto">Our work is driven by a passionate team combining youthful drive and lifelong experience.</p>
-
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Founder -->
-        <div class="bg-gray-800 p-8 rounded-xl shadow-2xl flex flex-col items-center text-center">
-          <img src="founder.jpeg" alt="Founder" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-red-500">
+    <div class="space-y-10">
+      <!-- Founder -->
+      <div class="bg-gray-800 p-8 rounded-xl shadow-2xl flex flex-col md:flex-row items-center md:items-start md:space-x-8">
+        <img src="founder.jpeg" alt="Founder" class="w-40 h-40 rounded-full object-cover mb-6 md:mb-0 border-4 border-red-500">
+        <div class="text-center md:text-left">
           <h3 class="text-2xl font-bold mb-1 text-white">Amogh Katiki</h3>
           <p class="text-red-400 font-semibold mb-2">Co-founder</p>
-          <p class="text-gray-400 text-sm italic">Thomas Jefferson High School for Science and Technology</p>
+          <p class="text-gray-400 text-sm italic mb-4">Thomas Jefferson High School for Science and Technology</p>
+          <p class="text-gray-300">
+            Amogh co-founded Navajeevan with the goal of empowering girls in Odisha through education and sustainable care programs.
+          </p>
         </div>
+      </div>
 
-        <!-- Co-founder -->
-        <div class="bg-gray-800 p-8 rounded-xl shadow-2xl flex flex-col items-center text-center">
-          <img src="cofounder.jpeg" alt="Co-Founder" class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-blue-500">
+      <!-- Co-founder -->
+      <div class="bg-gray-800 p-8 rounded-xl shadow-2xl flex flex-col md:flex-row items-center md:items-start md:space-x-8">
+        <img src="cofounder.jpeg" alt="Co-Founder" class="w-40 h-40 rounded-full object-cover mb-6 md:mb-0 border-4 border-blue-500">
+        <div class="text-center md:text-left">
           <h3 class="text-2xl font-bold mb-1 text-white">Rama Rao Katiki</h3>
           <p class="text-blue-400 font-semibold mb-2">Co-Founder</p>
-          <p class="text-gray-400 text-sm italic">District Counselor</p>
+          <p class="text-gray-400 text-sm italic mb-4">District Counselor</p>
+          <p class="text-gray-300">
+            A lifelong counselor and advisor, Rama Rao provides guidance and leadership to ensure Navajeevan’s mission remains grounded and impactful.
+          </p>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6 text-center">
-    <p>&copy; <span id="year"></span> Navajeevan. All rights reserved.</p>
-    <p class="text-sm text-gray-400 mt-2">Raising Hope in Odisha, India.</p>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+  </div>
+</section>
